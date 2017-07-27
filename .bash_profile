@@ -5,7 +5,7 @@ xinput disable "ELAN Touchscreen"
 #exports
 
 #show git branch
-export PS1='\[\e[1;34m\]\u: \w\[\e[32m\]$( git branch 2> /dev/null | cut -f2 -d\* -s | sed "s/^ / [/" | sed "s/$/]/" )\[\e[0m\] \[\e[1;34m\]>>\[\e[0m\] '
+export PS1='\[\e[1;34m\]\u: \w\[\e[32m\]$(__git_ps1)\[\e[0m\] \[\e[1;34m\]>>\[\e[0m\] '
 
 #my projects folder set in CDPATH
 export CDPATH='~/Projects'
