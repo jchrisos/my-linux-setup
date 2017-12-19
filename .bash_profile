@@ -24,5 +24,19 @@ function dexec() {
   docker exec -it "$1" bash
 }
 
+function docker-stop() {
+  sudo service docker stop
+}
+
+function docker-start() {
+  sudo service docker start
+}
+
+function docker-restart() {
+  sudo service docker stop
+  sudo service docker start
+}
+
 alias dck='docker-compose kill'
 alias dps='docker ps --format "table {{.Names}}"'
+alias ..='cd ..'
