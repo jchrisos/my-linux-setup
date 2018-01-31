@@ -37,6 +37,14 @@ function docker-restart() {
   sudo service docker start
 }
 
+alias mongo-start='mongo -u admin -p 123456 --authenticationDatabase admin'
+
 alias dck='docker-compose kill'
 alias dps='docker ps --format "table {{.Names}}"'
 alias ..='cd ..'
+
+alias goproj='cd ~/Projects'
+alias godoc='cd ~/Documents'
+alias gopic='cd ~/Pictures'
+alias godl='cd ~/Downloads'
+
