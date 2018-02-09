@@ -19,8 +19,8 @@ sudo apt install htop -y
 sudo apt install virtualbox -y
 sudo umake ide idea
 sudo umake android
-sudo umake ide datagrip
 sudo umake ide visual-studio-code
+sudo snap install datagrip --classic
 
 sudo apt install curl -y
 curl -s "https://get.sdkman.io" | bash
