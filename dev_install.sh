@@ -6,7 +6,7 @@ sudo apt upgrade -y
 
 #Install SDKs
 sudo apt install ubuntu-make -y
-sudo apt install openjdk-9-jdk -y
+sudo apt install openjdk-8-jdk -y
 sudo apt install nodejs -y
 
 #Install Tools and IDEs
@@ -17,10 +17,10 @@ sudo apt install docker.io -y
 sudo apt install docker-compose -y
 sudo apt install htop -y
 sudo apt install virtualbox -y
+sudo apt install mysql-server -y
 sudo umake ide idea
 sudo umake android
 sudo umake ide visual-studio-code
-sudo snap install datagrip --classic
 
 sudo apt install curl -y
 curl -s "https://get.sdkman.io" | bash
