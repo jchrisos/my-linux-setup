@@ -27,3 +27,6 @@ sudo apt install curl -y
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install gradle
+
+npm install ngrok -g
+npm install http-server -g
