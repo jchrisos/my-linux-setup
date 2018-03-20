@@ -30,3 +30,4 @@ sdk install gradle
 
 npm install ngrok -g
 npm install http-server -g
+npm install yarn -g
