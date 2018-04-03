@@ -8,6 +8,7 @@ sudo apt upgrade -y
 sudo apt install openjdk-8-jdk -y
 sudo apt install nodejs -y
 sudo apt install npm -y
+sudo apt install ruby -y
 
 #Install Tools and IDEs
 sudo apt install vim -y
