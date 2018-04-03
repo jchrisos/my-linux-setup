@@ -10,7 +10,7 @@ sudo apt install nodejs -y
 sudo apt install npm -y
 sudo apt install ruby -y
 sudo gem update --system
-gem install compass
+sudo gem install compass
 
 #Install Tools and IDEs
 sudo apt install vim -y
