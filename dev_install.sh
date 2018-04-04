@@ -47,8 +47,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 exec $SHELL
 
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.5.1
+rbenv global 2.5.1
 
 sudo gem update --system
 sudo gem install compass
