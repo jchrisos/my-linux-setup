@@ -37,6 +37,10 @@ function docker-restart() {
   sudo service docker start
 }
 
+function webmTOmp4 () {
+      ffmpeg -i "$1".webm -qscale 0 "$1".mp4
+} 
+
 alias mongo-start='mongo -u admin -p 123456 --authenticationDatabase admin'
 
 alias dck='docker-compose kill'
