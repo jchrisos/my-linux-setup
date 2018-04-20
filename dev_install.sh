@@ -52,3 +52,4 @@ rbenv global 2.5.1
 
 sudo gem update --system
 sudo gem install compass
+sudo apt install ffmpeg
