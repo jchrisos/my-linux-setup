@@ -1,36 +1,39 @@
 #!/bin/bash
 
+#Verify and create folder /Apps
 if [ ! -d ~/Apps ]; then
 	mkdir ~/Apps
 fi
 
 cd ~/Apps
 
+#Download postman
 wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
-wget https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png -O postman-logo.png
 
+#Verify and remove older version
 if [ -d /Postman ]; then
 	cd rm -r Postman
 else
 	tar -zxvf postman.tar.gz --remove-files
 fi
 
+#Create .desktop
 cat <<EOF>>postman.desktop
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Version=1.0
 Type=Application
 Terminal=false
-Icon=~/Apps/Postman/postman-logo.png
+Icon=/home/user/Apps/Postman/resources/app/assets/icon.png
 Name=Postman
-Exec=~/Apps/Postman/Postman
+Exec=/home/user/Apps/Postman/Postman
 Comment=Custom Postman desktop entry
 EOF
 
-mv postman-logo.png Postman/
+#Removed downloaded file
 rm postman.tar.gz
 
-sudo chmod +x postman.desktop
-sudo mv postman.desktop ~/.local/share/applications/postman.desktop
+#Move desktop file to user desktop files
+mv postman.desktop ~/.local/share/applications/postman.desktop
 
-echo "Postman installed!!"
+echo "Postman have been installed!!"
