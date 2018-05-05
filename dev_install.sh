@@ -53,3 +53,7 @@ rbenv global 2.5.1
 sudo gem update --system
 sudo gem install compass
 sudo apt install ffmpeg
+
+#To run android emulator
+sudo apt install qemu-kvm
+sudo adduser user kvm
