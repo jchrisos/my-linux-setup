@@ -5,7 +5,7 @@ sudo apt update -y
 sudo apt upgrade -y
 
 #Install SDKs
-sudo apt install openjdk-8-jdk -y
+sudo apt install openjdk-9-jdk -y
 sudo apt install nodejs -y
 sudo apt install npm -y
 sudo apt install ruby -y
