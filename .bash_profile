@@ -37,8 +37,12 @@ function docker-restart() {
   sudo service docker start
 }
 
-function webmTOmp4 () {
+function webmTOmp4() {
       ffmpeg -i "$1".webm -qscale 0 "$1".mp4
+} 
+
+function hgrep() {
+      history | grep $1
 } 
 
 alias mongo-start='mongo -u admin -p 123456 --authenticationDatabase admin'
