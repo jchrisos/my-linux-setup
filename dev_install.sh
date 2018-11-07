@@ -57,3 +57,5 @@ sudo apt install ffmpeg
 #To run android emulator
 sudo apt install qemu-kvm
 sudo adduser user kvm
+
+sudo apt install apache2-utils
