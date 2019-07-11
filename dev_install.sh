@@ -25,6 +25,7 @@ sudo apt install ubuntu-make -y
 sudo umake ide idea
 sudo umake android
 sudo umake ide visual-studio-code
+sudo apt install gnome-sushi -y
 
 sudo apt install curl -y
 curl -s "https://get.sdkman.io" | bash
