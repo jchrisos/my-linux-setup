@@ -52,6 +52,7 @@ alias dck='docker-compose kill'
 alias dps='docker ps --format "table {{.Names}}"'
 alias dcmvn='docker-compose kill && mvn clean package -Dexclude.devtools=false -U -DskipTests && docker-compose up --build'
 alias ..='cd ..'
+alias server='python -m SimpleHTTPServer 8000'
 
 alias goproj='cd ~/Projects'
 alias godoc='cd ~/Documents'
