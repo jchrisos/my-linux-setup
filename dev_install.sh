@@ -1,4 +1,3 @@
-#!/bin/bash
 #### update system
 sudo apt update && sudo apt upgrade -y
 
@@ -15,6 +14,7 @@ sudo apt install net-tools
 sudo apt install jq
 sudo apt install speedtest-cli
 sudo apt install ffmpeg -y
+sudo apt install vlc -y
 sudo snap install spotify
 sudo snap install drawing
 
