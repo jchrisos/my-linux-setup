@@ -15,6 +15,7 @@ sudo apt install jq
 sudo apt install speedtest-cli
 sudo apt install ffmpeg -y
 sudo apt install vlc -y
+sudo apt install neofetch -y
 sudo snap install spotify
 sudo snap install drawing
 
