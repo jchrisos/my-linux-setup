@@ -50,7 +50,7 @@ sudo snap install beekeeper-studio
 pip3 install httpserver
 sudo apt install qemu-kvm -y
 sudo usermod -aG kvm $USER
-udo apt install virt-manager -y
+sudo apt install virt-manager -y
 
 #### clean installation
 sudo apt autoremove
