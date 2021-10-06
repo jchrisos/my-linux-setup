@@ -22,7 +22,6 @@ sudo apt install digikam -y
 sudo apt install handbrake -y
 sudo snap install spotify
 sudo snap install drawing
-sudo apt remove gnome-shell-extension-ubuntu-dock -y
 
 
 #### Dev
@@ -47,16 +46,22 @@ sudo snap install intellij-idea-community --classic
 sudo snap install datagrip --classic
 sudo snap install android-studio-canary --classic
 sudo snap install beekeeper-studio
-pip3 install httpserver
 sudo apt install qemu-kvm -y
 sudo usermod -aG kvm $USER
 sudo apt install virt-manager -y
 
+sudo apt remove gnome-shell-extension-ubuntu-dock -y
+
 #### clean installation
 sudo apt autoremove
 
-#npm install http-server --global
-
+echo '---------------------------------------------------------------------'
+echo '| install node via nvm: https://github.com/nvm-sh                   |'
+echo '| nvm install node                                                  |'
+echo '| npm install http-server --global                                  |'
+echo '| install docker via https://docs.docker.com/engine/install/ubuntu/ |'
+echo '---------------------------------------------------------------------'
+echo ''
 echo 'install gnome-extensions below:'
 echo '- User Themes'
 echo '- OpenWeather'
