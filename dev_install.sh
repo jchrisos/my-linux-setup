@@ -3,6 +3,7 @@
 sudo apt update && sudo apt upgrade -y
 
 #### Utilities
+sudo apt install git -y
 sudo apt install tilix -y
 sudo apt install materia-gtk-theme -y
 sudo apt install papirus-icon-theme -y
