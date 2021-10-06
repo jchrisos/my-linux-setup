@@ -3,8 +3,6 @@
 sudo apt update && sudo apt upgrade -y
 
 #### Utilities
-sudo apt install git -y
-sudo apt install tilix -y
 sudo apt install materia-gtk-theme -y
 sudo apt install papirus-icon-theme -y
 sudo apt install gnome-tweak-tool -y
@@ -28,8 +26,9 @@ sudo apt remove gnome-shell-extension-ubuntu-dock
 
 
 #### Dev
-sudo apt install openfortivpn -y
 sudo apt install git -y
+sudo apt install tilix -y
+sudo apt install openfortivpn -y
 sudo apt install openjdk-14-jdk -y
 sudo apt install mysql-server -y
 sudo apt install meld -y
