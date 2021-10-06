@@ -22,7 +22,7 @@ sudo apt install digikam -y
 sudo apt install handbrake -y
 sudo snap install spotify
 sudo snap install drawing
-sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo apt remove gnome-shell-extension-ubuntu-dock -y
 
 
 #### Dev
