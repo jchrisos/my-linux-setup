@@ -23,8 +23,8 @@ apt install neofetch -y
 apt install python3-pip -y
 apt install digikam -y
 apt install handbrake -y
+apt install drawing -y
 snap install spotify
-snap install drawing
 
 #### Dev
 apt install git -y
@@ -39,6 +39,7 @@ apt install ctop -y
 apt install vim -y
 apt install maven -y
 apt install filezilla -y
+snap install slack
 snap install ngrok
 snap install gitkraken --classic
 snap install postman
@@ -72,6 +73,8 @@ apt remove gnome-sound-recorder -y
 apt remove gnome-todo -y
 apt remove gnome-music -y
 apt remove gnome-weather -y
+apt remove libreoffice-draw -y
+apt remove libreoffice-impress -y
 
 #### clean installation
 apt autoremove
