@@ -80,8 +80,8 @@ apt remove libreoffice-impress -y
 #### clean installation
 apt autoremove
 
-
 echo '---------------------------------------------------------------------'
+echo '| install sdkman via https://sdkman.io/install                      |'
 echo '| install node via nvm: https://github.com/nvm-sh                   |'
 echo '| nvm install node                                                  |'
 echo '| npm install http-server --global                                  |'
