@@ -27,6 +27,7 @@ apt install drawing -y
 snap install spotify
 
 #### Dev
+apt install zip -y
 apt install git -y
 apt install tilix -y
 apt install openfortivpn -y
