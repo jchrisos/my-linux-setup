@@ -1,6 +1,7 @@
-# Linux setup
+# My Linux setup
 Some alias, functions and configs that I use every day.
 
+# Debian and Ubuntu fresh installation
 ## First steps
 Install `curl` and `startship` as `root`
 
@@ -38,3 +39,11 @@ Run the script below to prepare the system:
 ```sh
 sudo wget -qO- https://github.com/jchrisos/my-linux-setup/blob/master/debian_setup.sh | bash
 ```
+## Post installation
+Install `gnome-extensions` below:
+- User Themes
+- OpenWeather
+- Trash
+- NordVPN Connect
+- Docker Integration
+- Dash to Panel
