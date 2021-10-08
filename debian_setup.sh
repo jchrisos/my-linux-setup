@@ -85,7 +85,6 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update
 sudo apt install brave-browser -y
 
-
 #### purge some softwares not used
 sudo apt purge aisleriot -y
 sudo apt purge five-or-more -y
