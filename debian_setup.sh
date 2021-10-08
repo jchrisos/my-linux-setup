@@ -85,11 +85,10 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update
 sudo apt install brave-browser -y
 
-#### install enpass
-echo "deb https://apt.enpass.io/ stable main" > /etc/apt/sources.list.d/enpass.list
-wget -O - https://apt.enpass.io/keys/enpass-linux.key | sudo tee /etc/apt/trusted.gpg.d/enpass.asc
-sudo apt update
-sudo apt install enpass
+#### install sdkman and gradle
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install gradle
 
 #### remove some softwares not used
 sudo apt purge aisleriot -y
