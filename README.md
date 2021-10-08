@@ -11,6 +11,11 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 ```
 Add the following to the end of `~/.bashrc`
 ```sh
+eval "$(starship init bash)"
+```
+
+and run the command:
+```sh
 source .bashrc
 ```
 
