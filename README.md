@@ -8,6 +8,7 @@ Install `curl` and `startship` as `root`
 ```sh
 apt install curl -y
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+exit
 ```
 Add the following to the end of `~/.bashrc`
 ```sh
