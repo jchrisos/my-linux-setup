@@ -1,12 +1,25 @@
 # Linux setup
 Some alias, functions and configs that I use every day.
 
-## Ubuntu initial setup
+## First steps
+Install `curl` and `startship` as `root`
+
+```sh
+apt install curl -y
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+```
+Add the following to the end of `~/.bashrc`
+```sh
+source .bashrc
+```
+
+
+## Ubuntu setup
 ```sh
 sudo wget -qO- https://github.com/jchrisos/my-linux-setup/blob/master/ubuntu_setup.sh | bash
 ```
 
-## Debian initial setup
+## Debian setup
 First of all, set 'user' as sudo
 ```sh
 su - root
