@@ -31,7 +31,6 @@ sudo curl -o- https://raw.githubusercontent.com/jchrisos/my-linux-setup/master/u
 With Debian we need to set a `user` as sudo, my user is `jchrisos`
 ```sh
 su - root
-apt install sudo -y
 usermod -aG sudo jchrisos
 exit
 ```
