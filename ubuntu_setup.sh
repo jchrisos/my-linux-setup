@@ -56,6 +56,7 @@ sudo apt remove gnome-shell-extension-ubuntu-dock -y
 sudo apt autoremove
 
 echo '---------------------------------------------------------------------'
+echo '| install sdkman via https://sdkman.io/install                      |'
 echo '| install node via nvm: https://github.com/nvm-sh                   |'
 echo '| nvm install node                                                  |'
 echo '| npm install http-server --global                                  |'
