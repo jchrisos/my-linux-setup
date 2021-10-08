@@ -3,7 +3,7 @@ Some alias, functions and configs that I use every day.
 
 ## Ubuntu initial setup
 ```sh
-sudo wget -qO- https://raw.githubusercontent.com/jchrisos/ubuntu-scripts/master/ubuntu_setup.sh | bash
+sudo wget -qO- https://github.com/jchrisos/my-linux-setup/blob/master/ubuntu_setup.sh | bash
 ```
 
 ## Debian initial setup
