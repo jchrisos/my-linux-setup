@@ -2,10 +2,11 @@
 #### update system
 sudo apt update && sudo apt upgrade -y
 
-#### Utilities
+#### Install snap
 sudo apt install snapd -y
 sudo snap install core
 
+#### Utilities
 sudo apt install apt-transport-https -y
 sudo apt install zip -y
 sudo apt install curl -y
@@ -73,16 +74,17 @@ sudo usermod -aG docker $USER
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
+#### install node via nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+source .bashrc
+nvm install --lts
+
 #### install brave-browser
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser -y
 
-#### install node via nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-source .bashrc
-nvm install --lts
 
 #### purge some softwares not used
 sudo apt purge aisleriot -y
