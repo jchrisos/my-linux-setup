@@ -21,5 +21,5 @@ sudo echo 'Hello World!'
 
 run script below:
 ```sh
-sudo wget -qO- https://raw.githubusercontent.com/jchrisos/ubuntu-scripts/master/debian_setup.sh | bash
+sudo wget -qO- https://github.com/jchrisos/my-linux-setup/blob/master/debian_setup.sh | bash
 ```
