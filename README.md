@@ -23,7 +23,7 @@ source .bashrc
 The Ubuntu setup is really simple, just run the script below as `sudo`
 
 ```sh
-sudo curl -o- https://github.com/jchrisos/my-linux-setup/blob/master/ubuntu_setup.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/jchrisos/my-linux-setup/master/ubuntu_setup.sh | bash
 ```
 
 ## Debian setup
@@ -42,7 +42,7 @@ sudo echo 'Hello World!'
 
 Run the script below to prepare the system:
 ```sh
-sudo curl -o- https://github.com/jchrisos/my-linux-setup/blob/master/debian_setup.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/jchrisos/my-linux-setup/master/debian_setup.sh | bash
 ```
 ## Post installation
 Install `gnome-extensions` below:
