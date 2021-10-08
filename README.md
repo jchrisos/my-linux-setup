@@ -13,6 +13,11 @@ su - root
 apt install sudo -y
 usermod -aG sudo user
 su – user
+exit
+```
+Restart the system. Test user:
+```sh
+sudo echo 'Hello World!'
 ```
 
 run script below:
