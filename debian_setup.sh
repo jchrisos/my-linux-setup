@@ -59,16 +59,27 @@ sudo apt purge four-in-a-row -y
 sudo apt purge hitori -y
 sudo apt purge lightsoff -y
 sudo apt purge quadrapassel -y
-sudo apt purge reversi -y
+sudo apt purge iagno -y
 sudo apt purge shotwell -y
+sudo apt purge tali -y
 sudo apt purge totem -y
+sudo apt purge swell-foop -y
 sudo apt purge evolution -y
 sudo apt purge gnome-games -y
+sudo apt purge gnome-2048 -y
 sudo apt purge gnome-clocks -y
+sudo apt purge gnome-chess -y
 sudo apt purge gnome-contacts -y
 sudo apt purge gnome-klotski -y
+sudo apt purge gnome-mahjongg -y
 sudo apt purge gnome-maps -y
+sudo apt purge gnome-mines -y
+sudo apt purge gnome-nibbles -y
+sudo apt purge gnome-robots -y
 sudo apt purge gnome-sound-recorder -y
+sudo apt purge gnome-sudoku -y
+sudo apt purge gnome-taquin -y
+sudo apt purge gnome-tetravex -y
 sudo apt purge gnome-todo -y
 sudo apt purge gnome-music -y
 sudo apt purge gnome-weather -y
@@ -76,8 +87,10 @@ sudo apt purge libreoffice-draw -y
 sudo apt purge libreoffice-impress -y
 
 #### clean installation
-sudo apt autopurge
+sudo apt autoremove -y
 
+
+sudo reboot
 echo '---------------------------------------------------------------------'
 echo '| install sdkman via https://sdkman.io/install                      |'
 echo '| install node via nvm: https://github.com/nvm-sh                   |'
