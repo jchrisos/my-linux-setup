@@ -7,7 +7,7 @@ apt install sudo -y
 usermod -aG sudo $USER
 
 #### Utilities
-apt install snapd
+apt install snapd -y
 snap install core
 
 apt install zip -y
