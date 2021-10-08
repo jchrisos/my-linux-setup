@@ -32,7 +32,7 @@ With Debian we need to set a `user` as sudo, my user is `jchrisos`
 ```sh
 su - root
 usermod -aG sudo jchrisos
-reboot
+exit
 ```
 Restart the system, logout does not work.
 To test if user is sudo, just run the command below:
