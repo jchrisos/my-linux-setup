@@ -81,11 +81,17 @@ nvm install --lts
 
 #### install brave-browser
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser -y
 
-#### purge some softwares not used
+#### install enpass
+echo "deb https://apt.enpass.io/ stable main" > /etc/apt/sources.list.d/enpass.list
+wget -O - https://apt.enpass.io/keys/enpass-linux.key | sudo tee /etc/apt/trusted.gpg.d/enpass.asc
+sudo apt update
+sudo apt install enpass
+
+#### remove some softwares not used
 sudo apt purge aisleriot -y
 sudo apt purge five-or-more -y
 sudo apt purge four-in-a-row -y
