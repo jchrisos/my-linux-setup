@@ -2,10 +2,6 @@
 #### update system
 apt update && apt upgrade -y
 
-#### add sudo
-apt install sudo -y
-usermod -aG sudo $USER
-
 #### Utilities
 apt install snapd -y
 snap install core
