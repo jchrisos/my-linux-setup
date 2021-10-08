@@ -12,7 +12,6 @@ First of all, set 'user' as sudo
 su - root
 apt install sudo -y
 usermod -aG sudo user
-su – user
 exit
 ```
 Restart the system. Test user:
