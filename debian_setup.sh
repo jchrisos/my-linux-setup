@@ -124,6 +124,7 @@ sudo apt purge gnome-music -y
 sudo apt purge gnome-weather -y
 sudo apt purge libreoffice-draw -y
 sudo apt purge libreoffice-impress -y
+sudo apt purge libreoffice-math -y
 
 #### clean installation
 sudo apt autoremove -y
