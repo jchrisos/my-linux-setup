@@ -27,6 +27,7 @@ sudo apt install python3-pip -y
 sudo apt install digikam -y
 sudo apt install handbrake -y
 sudo apt install drawing -y
+sudo apt install gnome-shell-extension-appindicator -y
 sudo snap install spotify
 
 #### Dev
