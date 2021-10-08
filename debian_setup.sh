@@ -129,4 +129,6 @@ sudo apt purge libreoffice-math -y
 #### clean installation
 sudo apt autoremove -y
 
+reset
+
 neofetch
