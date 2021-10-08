@@ -89,20 +89,4 @@ sudo apt purge libreoffice-impress -y
 #### clean installation
 sudo apt autoremove -y
 
-
 sudo reboot
-echo '---------------------------------------------------------------------'
-echo '| install sdkman via https://sdkman.io/install                      |'
-echo '| install node via nvm: https://github.com/nvm-sh                   |'
-echo '| nvm install node                                                  |'
-echo '| npm install http-server --global                                  |'
-echo '| install docker via https://docs.docker.com/engine/install/ubuntu/ |'
-echo '---------------------------------------------------------------------'
-echo ''
-echo 'install gnome-extensions below:'
-echo '- User Themes'
-echo '- OpenWeather'
-echo '- Trash'
-echo '- NordVPN Connect'
-echo '- Docker Integration'
-echo '- Dash to Panel'
