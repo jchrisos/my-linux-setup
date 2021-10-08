@@ -13,26 +13,28 @@ Add the following to the end of `~/.bashrc`
 source .bashrc
 ```
 
-
 ## Ubuntu setup
+The Ubuntu setup is really simple, just run the script below as `sudo`
+
 ```sh
 sudo wget -qO- https://github.com/jchrisos/my-linux-setup/blob/master/ubuntu_setup.sh | bash
 ```
 
 ## Debian setup
-First of all, set 'user' as sudo
+With Debian we need to set a `user` as sudo, my user is `jchrisos`
 ```sh
 su - root
 apt install sudo -y
-usermod -aG sudo user
+usermod -aG sudo jchrisos
 exit
 ```
-Restart the system. Test user:
+Restart the system, logout does not work.
+To test if user is sudo, just run the command below:
 ```sh
 sudo echo 'Hello World!'
 ```
 
-run script below:
+Run the script below to prepare the system:
 ```sh
 sudo wget -qO- https://github.com/jchrisos/my-linux-setup/blob/master/debian_setup.sh | bash
 ```
