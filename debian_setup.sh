@@ -28,6 +28,7 @@ sudo apt install python3-pip -y
 sudo apt install digikam -y
 sudo apt install handbrake -y
 sudo apt install drawing -y
+sudo apt-get install simplescreenrecorder -y
 sudo apt install gnome-shell-extension-appindicator -y
 sudo snap install spotify
 
@@ -85,10 +86,11 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update
 sudo apt install brave-browser -y
 
-#### install sdkman and gradle
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install gradle
+#### install enpass
+echo "deb https://apt.enpass.io/ stable main" > sudo /etc/apt/sources.list.d/enpass.list
+sudo wget -O - https://apt.enpass.io/keys/enpass-linux.key | sudo tee /etc/apt/trusted.gpg.d/enpass.asc
+sudo apt update
+sudo apt install enpass
 
 #### remove some softwares not used
 sudo apt purge aisleriot -y
