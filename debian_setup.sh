@@ -36,11 +36,9 @@ sudo apt install openjdk-17-jdk -y
 sudo apt install mysql-server -y
 sudo apt install meld -y
 sudo apt install htop -y
-sudo apt install ctop -y
 sudo apt install vim -y
 sudo apt install maven -y
 sudo apt install filezilla -y
-sudo snap install slack
 sudo snap install ngrok
 sudo snap install gitkraken --classic
 sudo snap install postman
