@@ -84,7 +84,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 source .bashrc
 nvm install --lts
 
-#### purge unused apps
+#### purge some softwares not used
 sudo apt purge aisleriot -y
 sudo apt purge five-or-more -y
 sudo apt purge four-in-a-row -y
