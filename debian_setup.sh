@@ -2,10 +2,16 @@
 #### update system
 apt update && apt upgrade -y
 
+#### add sudo
+apt install sudo -y
+usermod -aG sudo $USER
+
 #### Utilities
 apt install snapd
 snap install core
 
+apt install zip -y
+apt install curl -y
 apt install materia-gtk-theme -y
 apt install papirus-icon-theme -y
 apt install gnome-tweak-tool -y
@@ -27,14 +33,12 @@ apt install drawing -y
 snap install spotify
 
 #### Dev
-apt install zip -y
 apt install git -y
 apt install tilix -y
 apt install openfortivpn -y
 apt install openjdk-17-jdk -y
 apt install mysql-server -y
 apt install meld -y
-apt install curl -y
 apt install htop -y
 apt install ctop -y
 apt install vim -y
@@ -54,31 +58,31 @@ apt install qemu-kvm -y
 usermod -aG kvm $USER
 apt install virt-manager -y
 
-#### remove unused apps
-apt remove aisleriot -y
-apt remove five-or-more -y
-apt remove four-in-a-row -y
-apt remove hitori -y
-apt remove lightsoff -y
-apt remove quadrapassel -y
-apt remove reversi -y
-apt remove shotwell -y
-apt remove totem -y
-apt remove evolution -y
-apt remove gnome-games -y
-apt remove gnome-clocks -y
-apt remove gnome-contacts -y
-apt remove gnome-klotski -y
-apt remove gnome-maps -y
-apt remove gnome-sound-recorder -y
-apt remove gnome-todo -y
-apt remove gnome-music -y
-apt remove gnome-weather -y
-apt remove libreoffice-draw -y
-apt remove libreoffice-impress -y
+#### purge unused apps
+apt purge aisleriot -y
+apt purge five-or-more -y
+apt purge four-in-a-row -y
+apt purge hitori -y
+apt purge lightsoff -y
+apt purge quadrapassel -y
+apt purge reversi -y
+apt purge shotwell -y
+apt purge totem -y
+apt purge evolution -y
+apt purge gnome-games -y
+apt purge gnome-clocks -y
+apt purge gnome-contacts -y
+apt purge gnome-klotski -y
+apt purge gnome-maps -y
+apt purge gnome-sound-recorder -y
+apt purge gnome-todo -y
+apt purge gnome-music -y
+apt purge gnome-weather -y
+apt purge libreoffice-draw -y
+apt purge libreoffice-impress -y
 
 #### clean installation
-apt autoremove
+apt autopurge
 
 echo '---------------------------------------------------------------------'
 echo '| install sdkman via https://sdkman.io/install                      |'
