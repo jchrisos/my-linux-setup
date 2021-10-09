@@ -43,6 +43,7 @@ sudo apt install htop -y
 sudo apt install vim -y
 sudo apt install maven -y
 sudo apt install filezilla -y
+sudo apt-get install mariadb-client -y
 sudo snap install ngrok
 sudo snap install gitkraken --classic
 sudo snap install postman
