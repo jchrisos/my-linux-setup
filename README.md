@@ -2,21 +2,17 @@
 Some alias, functions and configs that I use every day.
 
 # Debian and Ubuntu fresh installation
-## First steps
-Install `curl` and `startship` as `root`
+## First steps: Installing Curl and Starship
 
+Install `curl` and `startship` as `root`
 ```sh
 apt install curl -y
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 exit
 ```
-Add the following to the end of `~/.bashrc`
+Run the following commands:
 ```sh
-eval "$(starship init bash)"
-```
-
-and run the command:
-```sh
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
 source .bashrc
 ```
 
