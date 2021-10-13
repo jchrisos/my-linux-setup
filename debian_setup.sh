@@ -110,6 +110,7 @@ sudo apt purge gnome-2048 -y
 sudo apt purge gnome-clocks -y
 sudo apt purge gnome-chess -y
 sudo apt purge gnome-contacts -y
+sudo apt purge gnome-documents -y
 sudo apt purge gnome-klotski -y
 sudo apt purge gnome-mahjongg -y
 sudo apt purge gnome-maps -y
@@ -123,9 +124,9 @@ sudo apt purge gnome-tetravex -y
 sudo apt purge gnome-todo -y
 sudo apt purge gnome-music -y
 sudo apt purge gnome-weather -y
-sudo apt purge libreoffice-draw -y
-sudo apt purge libreoffice-impress -y
-sudo apt purge libreoffice-math -y
+sudo apt purge libreoffice* -y
+sudo apt purge malcontent* -y
+sudo apt purge seahorse -y
 
 #### clean installation
 sudo apt autoremove -y
