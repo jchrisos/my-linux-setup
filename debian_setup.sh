@@ -92,6 +92,12 @@ curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install gradle
 
+### install golang
+wget https://golang.org/dl/go1.17.2.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.17.2.linux-amd64.tar.gz
+echo "export PATH=$PATH:/usr/local/go/bin" >> .bashrc
+rm go1.17.2.linux-amd64.tar.gz
+
 #### remove some softwares not used
 sudo apt purge aisleriot -y
 sudo apt purge five-or-more -y
