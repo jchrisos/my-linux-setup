@@ -93,8 +93,10 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install gradle
 
 ### install golang
-sudo curl https://golang.org/dl/go1.17.2.linux-amd64.tar.gz | sudo tar -xz -C /usr/local
+wget https://golang.org/dl/go1.17.2.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.17.2.linux-amd64.tar.gz
 echo "export PATH=$PATH:/usr/local/go/bin" >> .bashrc
+rm go1.17.2.linux-amd64.tar.gz
 source .bashrc
 
 #### remove some softwares not used
