@@ -95,6 +95,7 @@ sdk install gradle
 ### install golang
 sudo curl https://golang.org/dl/go1.17.2.linux-amd64.tar.gz | sudo tar -xz -C /usr/local
 echo "export PATH=$PATH:/usr/local/go/bin" >> .bashrc
+source .bashrc
 
 #### remove some softwares not used
 sudo apt purge aisleriot -y
