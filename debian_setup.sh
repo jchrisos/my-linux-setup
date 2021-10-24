@@ -44,14 +44,13 @@ sudo apt install vim -y
 sudo apt install maven -y
 sudo apt install filezilla -y
 sudo apt install mariadb-client -y
-sudo snap install ngrok
 sudo snap install gitkraken --classic
 sudo snap install postman
 sudo snap install slack --classic
 sudo snap install code --classic
 sudo snap install intellij-idea-community --classic
 sudo snap install datagrip --classic
-sudo snap install android-studio-canary --classic
+sudo snap install android-studio --classic
 sudo snap install beekeeper-studio
 sudo apt install qemu-kvm -y
 sudo usermod -aG kvm $USER
