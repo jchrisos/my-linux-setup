@@ -36,8 +36,7 @@ sudo snap install spotify
 sudo apt install git -y
 sudo apt install tilix -y
 sudo apt install openfortivpn -y
-sudo apt install openjdk-17-jdk -y
-sudo apt install mysql-server -y
+sudo apt install openjdk-11-jdk -y
 sudo apt install meld -y
 sudo apt install htop -y
 sudo apt install vim -y
