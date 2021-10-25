@@ -1,4 +1,7 @@
 #!/bin/bash
+#### add cedilla
+sudo echo 'GTK_IM_MODULE=cedilla' >> /etc/environment
+
 #### update system
 sudo apt update && sudo apt upgrade -y
 
