@@ -47,7 +47,6 @@ sudo apt install maven -y
 sudo apt install filezilla -y
 sudo apt install mariadb-client -y
 sudo snap install gitkraken --classic
-sudo snap install postman
 sudo snap install slack --classic
 sudo snap install beekeeper-studio
 sudo apt install qemu-kvm -y
@@ -89,12 +88,28 @@ curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install gradle
 
-### install golang
+#### install golang
 wget https://golang.org/dl/go1.17.2.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.17.2.linux-amd64.tar.gz
 echo "export PATH=$PATH:/usr/local/go/bin" >> .bashrc
 rm go1.17.2.linux-amd64.tar.gz
 source .bashrc
+
+#### install postman
+wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz
+sudo tar -xzf postman-linux-x64.tar.gz -C /opt
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+touch ~/.local/share/applications/Postman.desktop
+chmod +x ~/.local/share/applications/Postman.desktop
+echo '[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Exec=/opt/Postman/app/Postman %U
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;' > ~/.local/share/applications/Postman.desktop
+rm -rf postman-linux-x64.tar.gz
 
 #### remove some softwares not used
 sudo apt purge aisleriot -y
