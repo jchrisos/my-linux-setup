@@ -1,5 +1,5 @@
 #!/bin/bash
-#### add cedilla
+#### add cedilla with keyboard 'en_US International with dead keys'
 sudo echo 'GTK_IM_MODULE=cedilla' >> /etc/environment
 
 #### update system
@@ -49,10 +49,6 @@ sudo apt install mariadb-client -y
 sudo snap install gitkraken --classic
 sudo snap install postman
 sudo snap install slack --classic
-sudo snap install code --classic
-sudo snap install intellij-idea-community --classic
-sudo snap install datagrip --classic
-sudo snap install android-studio --classic
 sudo snap install beekeeper-studio
 sudo apt install qemu-kvm -y
 sudo usermod -aG kvm $USER
