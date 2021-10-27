@@ -144,6 +144,7 @@ sudo apt purge gnome-todo -y
 sudo apt purge gnome-music -y
 sudo apt purge gnome-weather -y
 sudo apt purge gnome-shell-extensions -y
+sudo apt purge gnome-shell-extension-appindicator -y
 sudo apt purge libreoffice* -y
 sudo apt purge malcontent* -y
 sudo apt purge seahorse -y
