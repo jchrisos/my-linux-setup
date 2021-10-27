@@ -42,11 +42,12 @@ sudo curl -o- https://raw.githubusercontent.com/jchrisos/my-linux-setup/master/d
 ```
 ## Post installation
 Install `gnome-extensions` below:
-- [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
-- [Desktop Icons](https://extensions.gnome.org/extension/1465/desktop-icons/)
-- [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
-- [Trash](https://extensions.gnome.org/extension/48/trash/)
-- [NordVPN Connect](https://extensions.gnome.org/extension/1595/nordvpn-connect/)
-- [Docker Integration](https://extensions.gnome.org/extension/1065/docker-status/)
 - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
-- [Tray Icon](https://extensions.gnome.org/extension/1503/tray-icons/)
+- [Desktop Icons](https://extensions.gnome.org/extension/1465/desktop-icons/)
+- [Docker Integration](https://extensions.gnome.org/extension/1065/docker-status/)
+- [NordVPN Connect](https://extensions.gnome.org/extension/1595/nordvpn-connect/)
+- [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
+- [Removable Drive Menu](https://extensions.gnome.org/extension/7/removable-drive-menu/)
+- [Trash](https://extensions.gnome.org/extension/48/trash/)
+- [Tray Icons Reloaded](https://extensions.gnome.org/extension/2890/tray-icons-reloaded/)
+- [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
