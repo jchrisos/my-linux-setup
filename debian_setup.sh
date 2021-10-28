@@ -31,8 +31,8 @@ sudo apt install python3-pip -y
 sudo apt install digikam -y
 sudo apt install handbrake -y
 sudo apt install drawing -y
-sudo apt-get install simplescreenrecorder -y
-sudo apt install gnome-shell-extension-appindicator -y
+sudo apt install simplescreenrecorder -y
+sudo apt install timeshift -y
 sudo snap install spotify
 
 #### Dev
