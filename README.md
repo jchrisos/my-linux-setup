@@ -16,14 +16,14 @@ echo 'eval "$(starship init bash)"' >> ~/.bashrc
 source .bashrc
 ```
 
-## Ubuntu setup
+## Ubuntu 22.04 LTS setup
 The Ubuntu setup is really simple, just run the script below as `sudo`
 
 ```sh
 sudo curl -o- https://raw.githubusercontent.com/jchrisos/my-linux-setup/master/ubuntu_setup.sh | bash
 ```
 
-## Debian setup
+## Debian 11 (bullseye) setup
 With Debian we need to set a `user` as sudo, my user is `jchrisos`
 ```sh
 su - root
