@@ -23,7 +23,7 @@ The Ubuntu setup is really simple, just run the script below as `sudo`
 sudo curl -o- https://raw.githubusercontent.com/jchrisos/my-linux-setup/master/ubuntu_setup.sh | bash
 ```
 
-## Debian 11 (bullseye) setup
+## Debian 11 setup
 With Debian we need to set a `user` as sudo, my user is `jchrisos`
 ```sh
 su - root
