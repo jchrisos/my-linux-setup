@@ -3,7 +3,6 @@
 sudo apt update && sudo apt upgrade -y
 
 #### Utilities
-sudo apt install apt-transport-https -y
 sudo apt install zip -y
 sudo apt install curl -y
 sudo apt install gnome-tweaks -y
@@ -39,6 +38,25 @@ sudo snap install slack --classic
 sudo apt install qemu-kvm -y
 sudo usermod -aG kvm $USER
 sudo apt install virt-manager -y
+
+#### install docker
+sudo apt remove docker docker-engine docker.io containerd runc -y
+sudo apt install apt-transport-https  -y
+sudo apt install ca-certificates  -y
+sudo apt install gnupg -y
+sudo apt install lsb-release -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+
+#### running docker as non-root user
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+#### install docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 #### install node via nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
