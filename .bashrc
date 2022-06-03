@@ -31,6 +31,15 @@ function hardsub() {
   ffmpeg -i $1 -filter:v "subtitles=$2:force_style='FontName=FontSize=24,PrimaryColour=&H00ffff&'" outfile.mp4	
 }
 
+function change-time() {
+  if [[ -z $1 ]]; then
+	  timedatectl set-ntp 1 & date
+  else
+	  timedatectl set-ntp 0
+	  sudo date +%T%p -s $1
+  fi
+}
+
 alias dck='docker-compose kill'
 alias dps='docker ps --format "table {{.Names}}"'
 alias dcmvn='docker-compose kill && mvn clean package -Dexclude.devtools=false -U -DskipTests && docker-compose up --build'
