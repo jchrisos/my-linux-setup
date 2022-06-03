@@ -17,7 +17,7 @@ export GRADLE_USER_HOME=~/.gradle
 function dcu() {
   docker-compose kill
   if [ -z "$1" ]; then
-    docker-compose up
+    docker-compose up --build
   else  
     docker-compose -f "$1" up
   fi
@@ -25,6 +25,10 @@ function dcu() {
 
 function dexec() {
   docker exec -it "$1" bash
+}
+
+function hardsub() {
+  ffmpeg -i $1 -filter:v "subtitles=$2:force_style='FontName=FontSize=24,PrimaryColour=&H00ffff&'" outfile.mp4	
 }
 
 alias dck='docker-compose kill'
