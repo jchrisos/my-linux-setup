@@ -33,7 +33,7 @@ function hardsub() {
 
 function change-time() {
   if [[ -z $1 ]]; then
-	  timedatectl set-ntp 1 & date
+	  timedatectl set-ntp 1
   else
 	  timedatectl set-ntp 0
 	  sudo date +%T%p -s $1
